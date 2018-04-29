@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Sidereal Confluence.iml" filepath="$PROJECT_DIR$/Sidereal Confluence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sidereal-Confluece.iml" filepath="$PROJECT_DIR$/Sidereal-Confluece.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sidereal-Confluece.iml" filepath="$PROJECT_DIR$/Sidereal-Confluece.iml" />
     </modules>
   </component>
 </project>
