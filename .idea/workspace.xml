@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5eb1972-4416-4909-bc95-428e2275945a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Items/PlayerResourceHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Items/PlayerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Items/PlayerResource.java" afterDir="false" />
     </list>
@@ -31,11 +31,43 @@
       <file leaf-file-name="PlayerResource.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Items/PlayerResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="61" />
+            <state relative-caret-position="1122">
+              <caret line="66" column="50" lean-forward="true" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
               <folding>
-                <element signature="e#1817#1818#0" expanded="true" />
-                <element signature="e#1843#1844#0" expanded="true" />
+                <element signature="e#2818#2819#0" expanded="true" />
+                <element signature="e#2850#2851#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerResourceHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Items/PlayerResourceHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding>
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#597#598#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmallCube.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Items/SmallCube.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+              <folding>
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,8 +115,9 @@
         <option value="$PROJECT_DIR$/src/Items/BigCubeColor.java" />
         <option value="$PROJECT_DIR$/src/Items/BigCube.java" />
         <option value="$PROJECT_DIR$/src/Items/SmallCube.java" />
-        <option value="$PROJECT_DIR$/src/Items/PlayerResource.java" />
         <option value="$PROJECT_DIR$/src/Program.java" />
+        <option value="$PROJECT_DIR$/src/Items/PlayerResourceHolder.java" />
+        <option value="$PROJECT_DIR$/src/Items/PlayerResource.java" />
       </list>
     </option>
   </component>
@@ -346,23 +379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/Resource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/Converter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Items/BigCube.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -374,21 +390,6 @@
             <element signature="e#235#236#0" expanded="true" />
             <element signature="e#284#285#0" expanded="true" />
             <element signature="e#318#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Items/SmallCube.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="39" />
-          <folding>
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -414,13 +415,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Items/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Items/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Items/SmallCube.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Items/PlayerResourceHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#597#598#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Items/PlayerResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="61" />
+        <state relative-caret-position="1122">
+          <caret line="66" column="50" lean-forward="true" selection-start-line="66" selection-start-column="50" selection-end-line="66" selection-end-column="50" />
           <folding>
-            <element signature="e#1817#1818#0" expanded="true" />
-            <element signature="e#1843#1844#0" expanded="true" />
+            <element signature="e#2818#2819#0" expanded="true" />
+            <element signature="e#2850#2851#0" expanded="true" />
           </folding>
         </state>
       </provider>
