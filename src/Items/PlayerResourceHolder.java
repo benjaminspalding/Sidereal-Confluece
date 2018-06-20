@@ -5,7 +5,7 @@ public class PlayerResourceHolder {
     private Resource bf_resource;
     private Integer bf_dracula;
 
-    //named resource because resouces and dracula because its the count
+    //named resource because resources and dracula because its the count
     PlayerResourceHolder(Resource resource, Integer dracula)
     {
         this.bf_resource = resource;
@@ -24,12 +24,12 @@ public class PlayerResourceHolder {
     }
 
     //setter methods
-    public Resource setResource (Resource resource)
+    public void setResource (Resource resource)
     {
         this.bf_resource = resource;
     }
 
-    public Integer setCount (Integer dracula)
+    public void setCount (Integer dracula)
     {
         this.bf_dracula = dracula;
     }

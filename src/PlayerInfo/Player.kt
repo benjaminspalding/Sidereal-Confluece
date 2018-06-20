@@ -1,3 +1,0 @@
-package PlayerInfo
-
-class Player

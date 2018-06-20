@@ -3,6 +3,6 @@ package Items;
 public enum BigCubeColor {
     BLACK,
     BLUE,
-    YELLOY,
+    YELLOW,
     GREY
 }

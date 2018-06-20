@@ -5,18 +5,20 @@ import java.util.*;
 
 public class PlayerResource {
 
-    private List<PlayerResourceHolder> list_Items;
+    private List<PlayerResourceHolder> items;
 
     //constructor with everything zero'd out
-    PlayerResource(List<PlayerResourceHolder> items)
+    public PlayerResource()
     {
+        items = new ArrayList<>();
+
         items.add(new PlayerResourceHolder(new SmallCube(SmallCubeColor.BROWN), 0));
         items.add(new PlayerResourceHolder(new SmallCube(SmallCubeColor.GREEN), 0));
         items.add(new PlayerResourceHolder(new SmallCube(SmallCubeColor.WHITE), 0));
         items.add(new PlayerResourceHolder(new SmallCube(SmallCubeColor.GREY),0));
         items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.BLACK),0));
         items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.BLUE), 0));
-        items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.YELLOY), 0));
+        items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.YELLOW), 0));
         items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.GREY), 0));
         items.add(new PlayerResourceHolder(new Ultratech(), 0));
         items.add(new PlayerResourceHolder(new Ship(), 0));
@@ -24,17 +26,19 @@ public class PlayerResource {
     }
 
     //constructor with everything as variables
-    PlayerResource(List<PlayerResourceHolder> items, Integer smallBrownCube, Integer smallGreenCube,
+    public PlayerResource(Integer smallBrownCube, Integer smallGreenCube,
                    Integer smallWhiteCube, Integer smallGreyCube, Integer bigBlackCube, Integer bigBlueCube,
                    Integer bigYellowCube, Integer bigGreyCube, Integer ultraTech, Integer ships, Integer vp)
     {
+        items = new ArrayList<>();
+
         items.add(new PlayerResourceHolder(new SmallCube(SmallCubeColor.BROWN), smallBrownCube));
         items.add(new PlayerResourceHolder(new SmallCube(SmallCubeColor.GREEN), smallGreenCube));
         items.add(new PlayerResourceHolder(new SmallCube(SmallCubeColor.WHITE), smallWhiteCube));
         items.add(new PlayerResourceHolder(new SmallCube(SmallCubeColor.GREY),smallGreyCube));
         items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.BLACK),bigBlackCube));
         items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.BLUE), bigBlueCube));
-        items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.YELLOY), bigYellowCube));
+        items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.YELLOW), bigYellowCube));
         items.add(new PlayerResourceHolder(new BigCube(BigCubeColor.GREY), bigGreyCube));
         items.add(new PlayerResourceHolder(new Ultratech(), ultraTech));
         items.add(new PlayerResourceHolder(new Ship(), ships));
@@ -47,33 +51,35 @@ public class PlayerResource {
         return items;
     }
 
-    public List<PlayerResourceHolder> add(List<PlayerResourceHolder> reqRes){
+    public List<PlayerResourceHolder> add(PlayerResource reqRes){
+        List<PlayerResourceHolder> reqResList = reqRes.getPlayerResource();
 
-        for(int i = 0; i < list_Items.size(); i++)
+        for(int i = 0; i < items.size(); i++)
         {
-            int reqResCount = reqRes.get(i).getCount();
-            int list_ItemsCount = list_Items.get(i).getCount();
+            int reqResCount = reqResList.get(i).getCount();
+            int list_ItemsCount = items.get(i).getCount();
 
             reqResCount = reqResCount + list_ItemsCount;
-            list_Items.get(i).setCount(reqResCount);
+            items.get(i).setCount(reqResCount);
         }
 
-            return list_Items;
+            return items;
 
     }
 
-    public List<PlayerResourceHolder> subtract(List<PlayerResourceHolder> reqRes){
+    public List<PlayerResourceHolder> subtract(PlayerResource reqRes){
+        List<PlayerResourceHolder> reqResList = reqRes.getPlayerResource();
 
-        for(int i = 0; i < list_Items.size(); i++)
+        for(int i = 0; i < items.size(); i++)
         {
-            int reqResCount = reqRes.get(i).getCount();
-            int list_ItemsCount = list_Items.get(i).getCount();
+            int reqResCount = reqResList.get(i).getCount();
+            int list_ItemsCount = items.get(i).getCount();
 
             reqResCount = reqResCount - list_ItemsCount;
-            list_Items.get(i).setCount(reqResCount);
+            items.get(i).setCount(reqResCount);
         }
 
-        return list_Items;
+        return items;
     }
 
 }
